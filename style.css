@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -70,9 +70,9 @@ body {
     height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(15,12,32,1)), url('C:\\Users\\Otavio\\Desktop\\Senai2026\\Semestre 02\\lima\\Prova-LIMA atividade final\\Poster clube da luta.webp') no-repeat center center/cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     padding: 0 20px;
     margin-top: 60px;
 }
