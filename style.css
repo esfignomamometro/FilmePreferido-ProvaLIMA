@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c20 0%, #15102a 50%, #060409 100%);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: rgba(26, 26, 26, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-menu li a:hover {
+    color: #e50914;
+    transform: translateY(-2px);
+}
+
+.nav-menu .btn-contato {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu .btn-contato:hover {
+    background-color: #b80710;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(15,12,32,1)), url('C:\\Users\\Otavio\\Desktop\\Senai2026\\Semestre 02\\lima\\Prova-LIMA atividade final\\Poster clube da luta.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.section-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg-alternate {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 60px 40px;
+}
+
+.section-container h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-container h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #e50914;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.08);
+}
+
+.elenco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.elenco-card {
+    background-color: #1c1830;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elenco-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.2);
+}
+
+.elenco-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #e50914;
+}
+
+.elenco-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.elenco-card h4 {
+    font-size: 1rem;
+    color: #e50914;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.elenco-card p {
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    line-height: 1.5;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1c1830;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #0f0c20;
+    border: 1px solid #332d54;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.4);
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #777294;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #b80710;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.footer {
+    background-color: #0b0914;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #1c1830;
+    margin-top: 8px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #e50914;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .hero {
+        margin-top: 110px;
+    }
+}
